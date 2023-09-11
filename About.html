@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinjaCoder</title>
+</head>
+<link rel="stylesheet" href="./BOOTSTRAP_CSS_JS/bootstrap_4.min.css">
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="./Img/favicon-32x32.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html"">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <a class="dropdown-item" href="#">Web Development</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Support</a>
+                        <a class="dropdown-item" href="#">Write For us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Log-In</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Sign-Up</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Log-In Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Log-In Page</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="loginInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="loginCheck1">
+                            <label class="form-check-label" for="loginCheck1">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Log-In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign_up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="signupInputusername1">User Name</label>
+                            <input type="text" class="form-control" id="signupInputusername1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="signupInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="signupInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="signupInputconfirmPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="signupInputconfirmPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featurette -->
+    <div class="container my-4">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">The Birth of NinjaCoder</h2>
+                <p class="lead">In a dimly lit basement, fueled by endless cups of coffee and a shared passion for
+                    coding, NinjaCoder was born. Jhon and Lisa , two coding enthusiasts with a vision, decided to
+                    create a blog that would become a haven for coders seeking wisdom and inspiration. With a few
+                    strokes of the keyboard and a ninja-themed logo, their dream took flight. NinjaCoder emerged as a
+                    go-to resource for coding knowledge, uniting a community of coding ninjas from around the world. And
+                    so, the coding adventure began.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="./Img/android-chrome-512x512.png" alt="">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">We Started NinjaCoder In 2005</h2>
+                <p class="lead">In 2005, NinjaCoder began as the brainchild of coding enthusiasts Jhon And Lisa.
+                    From
+                    their dorm room, armed with passion and outdated computers, they launched a coding blog that would
+                    evolve into an online coding haven.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="./Img/9.jpg" alt="">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Our Mission to Empower Coders</h2>
+                <p class="lead">At NinjaCoder, we're on a mission to empower coders. Coding isn't just a skill; it's a
+                    superpower to turn ideas into reality. We're here to equip you with the knowledge and tools to make
+                    your mark in the digital world, whether you're just starting or a seasoned pro. Join us in your
+                    coding journey!</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="./Img/8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Footer -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2022-2023 Ninja-Coder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+</body>
+<script src="./BOOTSTRAP_CSS_JS/jquery-3.7.1.js"></script>
+<script src="./BOOTSTRAP_CSS_JS/bootstrap_4.min.js"></script>
+
+</html>
